@@ -1,25 +1,33 @@
 //FONT IMPORT
 @font-face {
-    font-family: Kanji ;
-    src: url(sources/KaneiwaAlpRegular-jEpG.ttf);
+    font-family: Ninja;
+    src: url(sources/Fonts/AssassinNinja.otf);
+}
+@font-face {
+    font-family: Shika;
+    src: url(sources/Fonts/Shikamaru.ttf);
 }
 
 
+
 //COLOR PALETTE
-$prim-color: #ccc;
-$scnd-color: #222;
-$trcy-color: #2E0505;
-$bg-color: #555;
+$c-white: #CCC5B9;
+$c-drkgray: #222;
+$c-drkblue: #00141f;
+$c-drkbrown: #0F0101;
+$c-lgtbrown: #3f3021;
+$c-yellow: #F6AA1C;
 
 //GENERAL
 body{
-    background-color: $bg-color;
-    color: $prim-color;
+    background-color: $c-drkbrown;
+    color: $c-white;
+    margin: 0px;
 }
 
 //NAV BAR
 nav{
-    background-color: $trcy-color;
+    background-color: $c-drkblue;
     margin-top: auto;
     height: 90px;
     width: 100%;
@@ -43,6 +51,7 @@ nav{
                 display: inline;
                 text-decoration: none;
                 margin-right: 40px;
+                font-family: Ninja;
             }
             li:hover{
                 cursor: pointer;
@@ -63,7 +72,7 @@ nav{
     display: flex;
     flex-direction: column;
     margin: auto;
-    background-color: $scnd-color;
+    background-color: $c-white;
 }
 #intro{
     height: 100vh;
@@ -72,18 +81,23 @@ nav{
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    background-color: $c-drkgray;
     h1{
         font-size: 10rem;
         line-height: 0.9;
         text-align: center;
         position: absolute;
+        font-family: Shika;
+        z-index: 2;
+        color: $c-yellow;
     }
     img{
-        opacity: 0.5;
-        z-index: -1;
+        opacity: 0.1;
+        z-index: 1;
         min-width:100%;
         min-height:100%;
     }
+    
 }
 
 
@@ -131,7 +145,8 @@ nav{
 
 
 
-/*BUILDING TOOLS*/
+/*BUILDING TOOLS
 .test{
     border: 2px dashed greenyellow;
 }
+*/
