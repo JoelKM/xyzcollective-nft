@@ -8,12 +8,12 @@
 }
 body {
   background-color: #0F0101;
-  color: #CCC5B9;
+  color: #ddd9d3;
   margin: 0px;
 }
 
 nav {
-  background-color: #00141f;
+  background-color: #ddd9d3;
   margin-top: auto;
   height: 90px;
   width: 100%;
@@ -29,7 +29,7 @@ nav img {
 nav div {
   display: inline;
   float: right;
-  margin-top: 30px;
+  margin-top: 26px;
 }
 nav div ul {
   margin-left: 1000px;
@@ -40,16 +40,30 @@ nav div ul li {
   display: inline;
   text-decoration: none;
   margin-right: 40px;
-  font-family: Ninja;
+  font-family: Shika;
+  color: #431717;
 }
 nav div ul li:hover {
   cursor: pointer;
 }
 nav div div {
   display: inline;
+  margin-top: auto;
 }
 nav div div img {
   margin-right: 40px;
+}
+
+#twitter {
+  height: 37px;
+}
+
+#discord {
+  height: 37px;
+}
+
+#magiceden {
+  height: 40px;
 }
 
 #content {
@@ -57,7 +71,7 @@ nav div div img {
   display: flex;
   flex-direction: column;
   margin: auto;
-  background-color: #CCC5B9;
+  background-color: #ddd9d3;
 }
 
 #intro {
@@ -67,22 +81,22 @@ nav div div img {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-color: #222;
+  background-color: #310000;
 }
 #intro h1 {
   font-size: 10rem;
   line-height: 0.9;
   text-align: center;
   position: absolute;
-  font-family: Shika;
+  font-family: Ninja;
   z-index: 2;
-  color: #F6AA1C;
 }
 #intro img {
   opacity: 0.1;
   z-index: 1;
   min-width: 100%;
-  min-height: 100%;
+  height: 100vh;
+  position: absolute;
 }
 
 #info {

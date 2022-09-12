@@ -11,12 +11,14 @@
 
 
 //COLOR PALETTE
-$c-white: #CCC5B9;
+$c-white: #ddd9d3;
 $c-drkgray: #222;
 $c-drkblue: #00141f;
 $c-drkbrown: #0F0101;
 $c-lgtbrown: #3f3021;
 $c-yellow: #F6AA1C;
+$c-darkred: #310000;
+$c-main: #431717;
 
 //GENERAL
 body{
@@ -27,7 +29,7 @@ body{
 
 //NAV BAR
 nav{
-    background-color: $c-drkblue;
+    background-color: $c-white;
     margin-top: auto;
     height: 90px;
     width: 100%;
@@ -42,7 +44,7 @@ nav{
     div{
         display: inline;
         float: right;
-        margin-top: 30px;
+        margin-top: 26px;
         ul{
             margin-left: 1000px;
             display: inline;
@@ -51,7 +53,8 @@ nav{
                 display: inline;
                 text-decoration: none;
                 margin-right: 40px;
-                font-family: Ninja;
+                font-family: Shika;
+                color: $c-main;
             }
             li:hover{
                 cursor: pointer;
@@ -59,11 +62,22 @@ nav{
         }
         div{
             display: inline;
+            margin-top: auto;
             img{
                 margin-right: 40px;
             }
         }
     }
+}
+
+#twitter{
+    height: 37px;
+}
+#discord{
+    height: 37px;
+}
+#magiceden{
+    height: 40px;
 }
 
 //CONTENT
@@ -81,21 +95,21 @@ nav{
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background-color: $c-drkgray;
+    background-color: $c-darkred;
     h1{
         font-size: 10rem;
         line-height: 0.9;
         text-align: center;
         position: absolute;
-        font-family: Shika;
+        font-family: Ninja;
         z-index: 2;
-        color: $c-yellow;
     }
     img{
         opacity: 0.1;
         z-index: 1;
         min-width:100%;
-        min-height:100%;
+        height: 100vh;
+        position: absolute;
     }
     
 }
