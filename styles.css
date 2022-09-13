@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Kanit&display=swap");
 @font-face {
   font-family: Ninja;
   src: url(sources/Fonts/AssassinNinja.otf);
@@ -7,9 +9,10 @@
   src: url(sources/Fonts/Shikamaru.ttf);
 }
 body {
-  background-color: #0F0101;
-  color: #ddd9d3;
+  color: #4D525B;
   margin: 0px;
+  font-family: Kanit;
+  font-size: 2rem;
 }
 
 nav {
@@ -25,6 +28,8 @@ nav {
 }
 nav img {
   display: inline;
+  height: 90px;
+  margin-left: 15px;
 }
 nav div {
   display: inline;
@@ -38,13 +43,12 @@ nav div ul {
 }
 nav div ul li {
   display: inline;
-  text-decoration: none;
   margin-right: 40px;
-  font-family: Shika;
-  color: #431717;
 }
-nav div ul li:hover {
-  cursor: pointer;
+nav div ul li a {
+  text-decoration: none;
+  color: #431717;
+  font-family: Shika;
 }
 nav div div {
   display: inline;
@@ -66,15 +70,7 @@ nav div div img {
   height: 40px;
 }
 
-#content {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  background-color: #ddd9d3;
-}
-
-#intro {
+#hero {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -83,19 +79,73 @@ nav div div img {
   overflow: hidden;
   background-color: #310000;
 }
-#intro h1 {
+#hero h1 {
   font-size: 10rem;
   line-height: 0.9;
   text-align: center;
   position: absolute;
   font-family: Ninja;
   z-index: 2;
+  color: #ddd9d3;
 }
-#intro img {
+#hero img {
   opacity: 0.1;
   z-index: 1;
   min-width: 100%;
   height: 100vh;
+  position: absolute;
+}
+
+#content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background-color: #ddd9d3;
+}
+#content div {
+  padding-inline: 10%;
+  padding-top: 7.5%;
+  padding-bottom: 5%;
+  color: #4D525B;
+}
+#content div h1 {
+  color: #431717;
+}
+
+.inverted {
+  background-color: #431717;
+  color: #ddd9d3 !important;
+}
+.inverted h1 {
+  color: #ddd9d3 !important;
+}
+
+#join {
+  height: 1000px;
+}
+#join div {
+  width: 100%;
+  height: 300px;
+  background-color: #310000;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#join div h1 {
+  font-size: 5rem;
+  line-height: 0.9;
+  text-align: center;
+  position: absolute;
+  z-index: 2;
+  color: #ddd9d3;
+}
+#join div img {
+  opacity: 0.5;
+  z-index: 1;
+  width: 80%;
+  height: 300px;
   position: absolute;
 }
 
@@ -108,15 +158,6 @@ nav div div img {
   margin-top: 5%;
   width: 400px;
   height: 500px;
-}
-
-#join {
-  height: 900px;
-}
-#join div {
-  width: 70%;
-  height: 500px;
-  margin-left: 15%;
 }
 
 #roadmap {
@@ -141,7 +182,7 @@ nav div div img {
 
 /*BUILDING TOOLS
 .test{
-    border: 2px dashed greenyellow;
+    border: 2px dashed rgb(6, 17, 124);
 }
 */
 

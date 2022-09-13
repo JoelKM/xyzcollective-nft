@@ -7,24 +7,24 @@
     font-family: Shika;
     src: url(sources/Fonts/Shikamaru.ttf);
 }
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
 
 
 
 //COLOR PALETTE
 $c-white: #ddd9d3;
-$c-drkgray: #222;
-$c-drkblue: #00141f;
+$c-gray: #4D525B;
 $c-drkbrown: #0F0101;
-$c-lgtbrown: #3f3021;
-$c-yellow: #F6AA1C;
 $c-darkred: #310000;
 $c-main: #431717;
 
 //GENERAL
 body{
-    background-color: $c-drkbrown;
-    color: $c-white;
+    color: $c-gray;
     margin: 0px;
+    font-family: Kanit;
+    font-size: 2rem;
 }
 
 //NAV BAR
@@ -40,6 +40,8 @@ nav{
     z-index: 9;
     img{
         display: inline;
+        height: 90px;
+        margin-left: 15px;
     }
     div{
         display: inline;
@@ -51,13 +53,12 @@ nav{
             margin-right: 40px;
             li{
                 display: inline;
-                text-decoration: none;
                 margin-right: 40px;
-                font-family: Shika;
-                color: $c-main;
-            }
-            li:hover{
-                cursor: pointer;
+                a{
+                    text-decoration: none;
+                    color: $c-main;
+                    font-family: Shika;
+                }
             }
         }
         div{
@@ -80,15 +81,8 @@ nav{
     height: 40px;
 }
 
-//CONTENT
-#content{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    background-color: $c-white;
-}
-#intro{
+//HERO
+#hero{
     height: 100vh;
     width: 100%;
     display: flex;
@@ -103,6 +97,7 @@ nav{
         position: absolute;
         font-family: Ninja;
         z-index: 2;
+        color: $c-white;
     }
     img{
         opacity: 0.1;
@@ -110,10 +105,62 @@ nav{
         min-width:100%;
         height: 100vh;
         position: absolute;
-    }
-    
+    }   
 }
 
+//CONTENT
+#content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: $c-white;
+    div{
+        padding-inline: 10%;
+        padding-top: 7.5%;
+        padding-bottom: 5%;
+        color: $c-gray;
+        h1{
+            color: $c-main;
+        }
+    }
+}
+.inverted{
+    background-color: $c-main;
+    color: $c-white !important;
+    h1{
+        color: $c-white !important;
+    }
+}
+
+
+#join{
+    height: 1000px;
+    div{
+        width: 100%;
+        height: 300px;
+        background-color: $c-darkred;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+            h1{
+                font-size: 5rem;
+                line-height: 0.9;
+                text-align: center;
+                position: absolute;
+                z-index: 2;
+                color: $c-white;
+            }
+            img{
+                opacity: 0.5;
+                z-index: 1;
+                width:80%;
+                height: 300px;
+                position: absolute;
+            }
+    }
+}
 
 #info{
     height: 1200px;
@@ -123,16 +170,6 @@ nav{
         margin-top: 5%;
         width: 400px;
         height: 500px;
-    }
-}
-
-
-#join{
-    height: 900px;
-    div{
-        width: 70%;
-        height: 500px;
-        margin-left: 15%;
     }
 }
 
@@ -161,6 +198,6 @@ nav{
 
 /*BUILDING TOOLS
 .test{
-    border: 2px dashed greenyellow;
+    border: 2px dashed rgb(6, 17, 124);
 }
 */
