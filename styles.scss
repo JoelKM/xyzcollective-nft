@@ -7,8 +7,6 @@
     font-family: Shika;
     src: url(sources/Fonts/Shikamaru.ttf);
 }
-@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
 
 
 
@@ -25,6 +23,7 @@ body{
     margin: 0px;
     font-family: Kanit;
     font-size: 2rem;
+    overflow-x: hidden;  
 }
 
 //NAV BAR
@@ -53,12 +52,13 @@ nav{
             margin-right: 40px;
             li{
                 display: inline;
-                margin-right: 40px;
-                a{
-                    text-decoration: none;
-                    color: $c-main;
-                    font-family: Shika;
-                }
+                margin-right: 40px; 
+                text-decoration: none;
+                color: $c-main;
+                font-family: Shika;
+            }
+            li:hover{
+                cursor: pointer;
             }
         }
         div{
@@ -117,15 +117,19 @@ nav{
     background-color: $c-white;
     div{
         padding-inline: 10%;
-        padding-top: 7.5%;
+        padding-top: 5%;
         padding-bottom: 5%;
         color: $c-gray;
         h1{
             color: $c-main;
+            font-family: Rock Salt;
+            font-size: 5rem;
+            margin-top: 0px;
+            margin-bottom: 0px;
         }
     }
 }
-.inverted{
+.redtheme{
     background-color: $c-main;
     color: $c-white !important;
     h1{
@@ -133,10 +137,9 @@ nav{
     }
 }
 
-
 #join{
     height: 1000px;
-    div{
+    .banner{
         width: 100%;
         height: 300px;
         background-color: $c-darkred;
@@ -151,6 +154,7 @@ nav{
                 position: absolute;
                 z-index: 2;
                 color: $c-white;
+                font-family: Stalinist One;
             }
             img{
                 opacity: 0.5;
@@ -160,16 +164,39 @@ nav{
                 position: absolute;
             }
     }
+    /*
+    .buttons{
+
+    }*/
 }
+
 
 #info{
     height: 1200px;
     width: 100%;
-    div{ //esto se va
+    div{
         margin-left: 10%;
         margin-top: 5%;
-        width: 400px;
-        height: 500px;
+        height: 41rem;
+        width: 95rem;
+        padding-inline: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        img{
+            display: inline;
+            height: 40rem;
+            border: 0.5rem double $c-white;
+        }
+        div{
+            display: inline;
+            width: 50rem;
+            margin-left: 2rem;
+            height: auto;
+            float: right;
+            p{
+                color: $c-white;
+            }
+        }
     }
 }
 
@@ -196,8 +223,7 @@ nav{
 
 
 
-/*BUILDING TOOLS
+/*BUILDING TOOLS*/
 .test{
-    border: 2px dashed rgb(6, 17, 124);
+    border: 4px dashed rgb(6, 17, 124);
 }
-*/

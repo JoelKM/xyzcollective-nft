@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Kanit&display=swap");
 @font-face {
   font-family: Ninja;
   src: url(sources/Fonts/AssassinNinja.otf);
@@ -13,6 +11,7 @@ body {
   margin: 0px;
   font-family: Kanit;
   font-size: 2rem;
+  overflow-x: hidden;
 }
 
 nav {
@@ -44,11 +43,12 @@ nav div ul {
 nav div ul li {
   display: inline;
   margin-right: 40px;
-}
-nav div ul li a {
   text-decoration: none;
   color: #431717;
   font-family: Shika;
+}
+nav div ul li:hover {
+  cursor: pointer;
 }
 nav div div {
   display: inline;
@@ -105,26 +105,34 @@ nav div div img {
 }
 #content div {
   padding-inline: 10%;
-  padding-top: 7.5%;
+  padding-top: 5%;
   padding-bottom: 5%;
   color: #4D525B;
 }
 #content div h1 {
   color: #431717;
+  font-family: Rock Salt;
+  font-size: 5rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
-.inverted {
+.redtheme {
   background-color: #431717;
   color: #ddd9d3 !important;
 }
-.inverted h1 {
+.redtheme h1 {
   color: #ddd9d3 !important;
 }
 
 #join {
   height: 1000px;
+  /*
+  .buttons{
+
+  }*/
 }
-#join div {
+#join .banner {
   width: 100%;
   height: 300px;
   background-color: #310000;
@@ -133,15 +141,16 @@ nav div div img {
   align-items: center;
   justify-content: center;
 }
-#join div h1 {
+#join .banner h1 {
   font-size: 5rem;
   line-height: 0.9;
   text-align: center;
   position: absolute;
   z-index: 2;
   color: #ddd9d3;
+  font-family: Stalinist One;
 }
-#join div img {
+#join .banner img {
   opacity: 0.5;
   z-index: 1;
   width: 80%;
@@ -156,8 +165,26 @@ nav div div img {
 #info div {
   margin-left: 10%;
   margin-top: 5%;
-  width: 400px;
-  height: 500px;
+  height: 41rem;
+  width: 95rem;
+  padding-inline: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+#info div img {
+  display: inline;
+  height: 40rem;
+  border: 0.5rem double #ddd9d3;
+}
+#info div div {
+  display: inline;
+  width: 50rem;
+  margin-left: 2rem;
+  height: auto;
+  float: right;
+}
+#info div div p {
+  color: #ddd9d3;
 }
 
 #roadmap {
@@ -180,10 +207,9 @@ nav div div img {
   height: 500px;
 }
 
-/*BUILDING TOOLS
-.test{
-    border: 2px dashed rgb(6, 17, 124);
+/*BUILDING TOOLS*/
+.test {
+  border: 4px dashed rgb(6, 17, 124);
 }
-*/
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,7 +1,7 @@
 
 
 //NAVIGATE ON CLICK
-document.querySelectorAll('nav li a').forEach((listitem)=>{
+document.querySelectorAll('nav li').forEach((listitem)=>{
     listitem.addEventListener('click', ()=>{
         console.log("click");
         var topPosition=document.getElementById(listitem.dataset.page).offsetTop-120;
