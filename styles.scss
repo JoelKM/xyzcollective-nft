@@ -1,4 +1,6 @@
-//FONT IMPORT
+// F O N T   I M P O R T S
+
+
 @font-face {
     font-family: Ninja;
     src: url(sources/Fonts/AssassinNinja.otf);
@@ -10,46 +12,56 @@
 
 
 
-//COLOR PALETTE
+// C O L O R   P A L E T T E
+
+
 $c-white: #ddd9d3;
 $c-gray: #4D525B;
 $c-drkbrown: #0F0101;
 $c-darkred: #310000;
 $c-main: #431717;
 
-//GENERAL
+
+
+// G E N E R A L
+
+
 body{
     margin: 0px;
     font-family: Kanit;
-    font-size: 2rem;
+    font-size: 1.5rem;
     overflow-x: hidden;
     min-width: 100%;
 }
 
-//NAV BAR
+
+
+// N A V   B A R
+
+
 nav{
     background-color: $c-white;
     margin-top: auto;
     height: 90px;
     width: 100%;
-    font-size: 27px;
+    font-size: 1.5rem;
     position: absolute;
     opacity: 1;
     position: fixed;
     z-index: 9;
-    img{
-        display: inline;
-        height: 90px;
-        margin-left: 15px;
+    a{
+        img{
+            display: inline;
+            height: 90px;
+            margin-left: 15px;
+        }
     }
     div{
         display: inline;
         float: right;
         margin-top: 26px;
         ul{
-            margin-left: 1000px;
             display: inline;
-            margin-right: 40px;
             li{
                 display: inline;
                 margin-right: 40px; 
@@ -65,23 +77,27 @@ nav{
             display: inline;
             margin-top: auto;
             img{
-                margin-right: 40px;
+                margin-right: 20px;
             }
         }
     }
 }
 
 #twitter{
-    height: 37px;
+    height: 27px;
 }
 #discord{
-    height: 37px;
+    height: 27px;
 }
 #magiceden{
-    height: 40px;
+    height: 30px;
 }
 
-//HERO
+
+
+// H E R O
+
+
 #hero{
     height: 100vh;
     width: 100%;
@@ -108,7 +124,11 @@ nav{
     }   
 }
 
-//CONTENT
+
+
+// G E N E R A L   C O N T E N T
+
+
 #content{
     width: 100%;
     display: flex;
@@ -138,6 +158,9 @@ nav{
     }
 }
 
+
+//JOIN SECTION
+
 #join{
     height: 600px;
     div{
@@ -148,10 +171,10 @@ nav{
         padding: 0px;
     }
     .banner{
-        height: 300px;
+        height: 18rem;
         background-color: $c-darkred;
         h1{
-            font-size: 5rem;
+            font-size: 4.3rem;
             line-height: 0.9;
             text-align: center;
             position: absolute;
@@ -162,8 +185,8 @@ nav{
         img{
             opacity: 0.5;
             z-index: 1;
-            width:77%;
-            height: 300px;
+            width:80%;
+            height: 18rem;
             position: absolute;
         }
     }
@@ -173,8 +196,8 @@ nav{
         height: 5rem;
         width: 30rem;
         a{
-            padding: 3px;
-            padding-inline: 30px;
+            padding: 7px;
+            padding-inline: 50px;
             text-decoration: none;
             border-radius: 7px;
             color: white;
@@ -198,34 +221,42 @@ nav{
     background-color: #da43a5;
 }
 
+
+//INFO SECTION
+
 #info{
     height: 1200px;
     width: 100%;
     div{
-        margin-left: 10%;
-        margin-top: 5%;
-        height: 41rem;
-        width: 95rem;
-        padding-inline: 0px;
-        padding-top: 0px;
-        padding-bottom: 0px;
-        img{
-            display: inline;
-            height: 40rem;
-            border: 0.5rem double $c-white;
-        }
         div{
-            display: inline;
-            width: 50rem;
-            margin-left: 2rem;
-            height: auto;
-            float: right;
-            p{
-                color: $c-white;
+            margin-left: 10%;
+            margin-top: 5%;
+            height: 41rem;
+            width: 95rem;
+            padding-inline: 0px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            img{
+                display: inline;
+                height: 40rem;
+                border: 0.5rem double $c-white;
+            }
+            div{
+                display: inline;
+                width: 50rem;
+                margin-left: 2rem;
+                height: auto;
+                float: right;
+                p{
+                    color: $c-white;
+                }
             }
         }
     }
 }
+
+
+//ROADMAP SECTION
 
 #roadmap{
     height: 1080px;
@@ -235,6 +266,9 @@ nav{
     }
 }
 
+
+//TEAM SECTION
+
 #team{
     height: 40rem;
     div{
@@ -242,6 +276,9 @@ nav{
         height: 20rem;
     }
 }
+
+
+//FAQS SECTION
 
 #faqs{
     height: 500px;
