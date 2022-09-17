@@ -7,11 +7,11 @@
   src: url(sources/Fonts/Shikamaru.ttf);
 }
 body {
-  color: #4D525B;
   margin: 0px;
   font-family: Kanit;
   font-size: 2rem;
   overflow-x: hidden;
+  min-width: 100%;
 }
 
 nav {
@@ -107,10 +107,8 @@ nav div div img {
   padding-inline: 10%;
   padding-top: 5%;
   padding-bottom: 5%;
-  color: #4D525B;
 }
 #content div h1 {
-  color: #431717;
   font-family: Rock Salt;
   font-size: 5rem;
   margin-top: 0px;
@@ -119,27 +117,29 @@ nav div div img {
 
 .redtheme {
   background-color: #431717;
-  color: #ddd9d3 !important;
+  color: #ddd9d3;
 }
-.redtheme h1 {
-  color: #ddd9d3 !important;
+
+.whitetheme {
+  color: #4D525B;
+}
+.whitetheme h1 {
+  color: #431717;
 }
 
 #join {
-  height: 1000px;
-  /*
-  .buttons{
-
-  }*/
+  height: 600px;
 }
-#join .banner {
-  width: 100%;
-  height: 300px;
-  background-color: #310000;
-  padding: 0px;
+#join div {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  padding: 0px;
+}
+#join .banner {
+  height: 300px;
+  background-color: #310000;
 }
 #join .banner h1 {
   font-size: 5rem;
@@ -153,9 +153,40 @@ nav div div img {
 #join .banner img {
   opacity: 0.5;
   z-index: 1;
-  width: 80%;
+  width: 77%;
   height: 300px;
   position: absolute;
+}
+
+.buttons {
+  height: 5rem;
+  width: 30rem;
+}
+.buttons a {
+  padding: 3px;
+  padding-inline: 30px;
+  text-decoration: none;
+  border-radius: 7px;
+  color: white;
+  border: 0px solid;
+  font-size: 1.5rem;
+  box-shadow: 0 0.2em #4D525B;
+  margin-top: 0px;
+  transition: 350ms;
+}
+.buttons a:hover {
+  box-shadow: 0 0 #6b6b6b;
+  margin-top: 0.5em;
+}
+
+.discbutton {
+  margin-right: 1rem;
+  background-color: #758aff;
+}
+
+.mebutton {
+  margin-left: 1rem;
+  background-color: #da43a5;
 }
 
 #info {
@@ -196,11 +227,11 @@ nav div div img {
 }
 
 #team {
-  height: 700px;
+  height: 40rem;
 }
 #team div {
   width: 70%;
-  height: 500px;
+  height: 20rem;
 }
 
 #faqs {
@@ -208,8 +239,9 @@ nav div div img {
 }
 
 /*BUILDING TOOLS*/
-.test {
-  border: 4px dashed rgb(6, 17, 124);
-}
+/*
+.test{
+    border: 4px dashed rgb(6, 17, 124);
+}*/
 
 /*# sourceMappingURL=styles.css.map */
