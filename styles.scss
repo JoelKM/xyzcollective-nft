@@ -164,6 +164,30 @@ h2{
     margin-top: 10px;
 }
 
+//BUTTONS
+.buttons{
+    height: 5rem;
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    a{
+        padding: 7px;
+        padding-inline: 50px;
+        text-decoration: none;
+        border-radius: 7px;
+        color: white;
+        border: 0px solid;
+        font-size: 1.5rem;
+        box-shadow: 0 0.2em $c-gray;
+        margin-top: 0px;
+        transition: 350ms;
+    }
+    a:hover{
+        box-shadow: 0 0 #6b6b6b;
+        margin-top: 0.5rem;
+    }
+} 
+
 //JOIN SECTION
 
 #join{
@@ -197,26 +221,6 @@ h2{
     }
 }
 
-.buttons{
-        height: 5rem;
-        width: 30rem;
-        a{
-            padding: 7px;
-            padding-inline: 50px;
-            text-decoration: none;
-            border-radius: 7px;
-            color: white;
-            border: 0px solid;
-            font-size: 1.5rem;
-            box-shadow: 0 0.2em $c-gray;
-            margin-top: 0px;
-            transition: 350ms;
-        }
-        a:hover{
-            box-shadow: 0 0 #6b6b6b;
-            margin-top: 0.5em;    
-        }
-} 
 .discbutton{
     margin-right: 1rem;
     background-color: #758aff;
@@ -230,12 +234,12 @@ h2{
 //INFO SECTION
 
 #info{
-    height: 90rem;
+    height: 150rem;
     width: 100%;
     div{
-        margin-left: 10%;
-        margin-top: 5%;
-        height: 41rem;
+        margin-inline: 10%;
+        margin-top: 6%;
+        height: auto;
         width: 95rem;
         padding-inline: 0px;
         padding-top: 0px;
@@ -247,16 +251,33 @@ h2{
         }
         div{
             display: inline;
-            width: 62rem;
+            width: 50rem;
             margin-left: auto;
             height: auto;
             float: right;
             margin-top: auto;
             p{
                     color: $c-white;
+                    text-align: justify;
+            }
+            
+        }
+        .buttons{
+            a{
+                background-color: #6b6b6b;
+                margin-inline: 0px;
+            }
+        }
+        h3{
+            margin-top: 40px;
+            span{
+                color: rgb(247, 219, 158);
             }
         }
     }
+}
+.staking{
+    background-color: #6b6b6b;
 }
 
 
@@ -285,6 +306,7 @@ h2{
     padding-bottom: 0% !important;
     padding-inline: 0px !important;
     margin: auto;
+    border-radius: 9px;
     div{
         margin-inline: 1.5rem;
         display: inline;
@@ -294,6 +316,7 @@ h2{
         text-align: center;
         img{
             width: 14rem;
+            border-radius: 999px;
         }
         h3{
             margin: 0px;

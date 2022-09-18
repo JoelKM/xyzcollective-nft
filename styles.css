@@ -134,6 +134,29 @@ h2 {
   margin-top: 10px;
 }
 
+.buttons {
+  height: 5rem;
+  width: 30rem;
+  display: flex;
+  align-items: center;
+}
+.buttons a {
+  padding: 7px;
+  padding-inline: 50px;
+  text-decoration: none;
+  border-radius: 7px;
+  color: white;
+  border: 0px solid;
+  font-size: 1.5rem;
+  box-shadow: 0 0.2em #4D525B;
+  margin-top: 0px;
+  transition: 350ms;
+}
+.buttons a:hover {
+  box-shadow: 0 0 #6b6b6b;
+  margin-top: 0.5rem;
+}
+
 #join {
   height: 23rem;
 }
@@ -165,27 +188,6 @@ h2 {
   position: absolute;
 }
 
-.buttons {
-  height: 5rem;
-  width: 30rem;
-}
-.buttons a {
-  padding: 7px;
-  padding-inline: 50px;
-  text-decoration: none;
-  border-radius: 7px;
-  color: white;
-  border: 0px solid;
-  font-size: 1.5rem;
-  box-shadow: 0 0.2em #4D525B;
-  margin-top: 0px;
-  transition: 350ms;
-}
-.buttons a:hover {
-  box-shadow: 0 0 #6b6b6b;
-  margin-top: 0.5em;
-}
-
 .discbutton {
   margin-right: 1rem;
   background-color: #758aff;
@@ -197,13 +199,13 @@ h2 {
 }
 
 #info {
-  height: 90rem;
+  height: 150rem;
   width: 100%;
 }
 #info div {
-  margin-left: 10%;
-  margin-top: 5%;
-  height: 41rem;
+  margin-inline: 10%;
+  margin-top: 6%;
+  height: auto;
   width: 95rem;
   padding-inline: 0px;
   padding-top: 0px;
@@ -216,7 +218,7 @@ h2 {
 }
 #info div div {
   display: inline;
-  width: 62rem;
+  width: 50rem;
   margin-left: auto;
   height: auto;
   float: right;
@@ -224,6 +226,21 @@ h2 {
 }
 #info div div p {
   color: #ddd9d3;
+  text-align: justify;
+}
+#info div .buttons a {
+  background-color: #6b6b6b;
+  margin-inline: 0px;
+}
+#info div h3 {
+  margin-top: 40px;
+}
+#info div h3 span {
+  color: rgb(247, 219, 158);
+}
+
+.staking {
+  background-color: #6b6b6b;
 }
 
 #roadmap {
@@ -246,6 +263,7 @@ h2 {
   padding-bottom: 0% !important;
   padding-inline: 0px !important;
   margin: auto;
+  border-radius: 9px;
 }
 .teamcontainer div {
   margin-inline: 1.5rem;
@@ -257,6 +275,7 @@ h2 {
 }
 .teamcontainer div img {
   width: 14rem;
+  border-radius: 999px;
 }
 .teamcontainer div h3 {
   margin: 0px;
