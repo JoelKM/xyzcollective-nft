@@ -14,7 +14,6 @@ document.querySelectorAll('nav li').forEach((listitem)=>{
 })
 
 //FAQS ACCORDION
-
 var acc = document.getElementsByClassName("accordion");
 var i;
 

@@ -268,7 +268,6 @@ h2{
     h1{
         text-decoration: line-through;
     }
-    
 }
 
 
@@ -278,17 +277,39 @@ h2{
     height: 40rem;
 }
 .teamcontainer{
-    width: 70%;
-    height: 16rem;
+    display: flex;
+    width: 73rem;
+    height: 24rem;
     background-color: $c-white;
-    padding-bottom: 0%;
+    padding-top: 1% !important;
+    padding-bottom: 0% !important;
+    padding-inline: 0px !important;
     margin: auto;
     div{
-        margin-inline: 10px;
+        margin-inline: 1.5rem;
         display: inline;
-        border: 3px solid black;
-        width: 30%;
-        height: 100px;
+        width: 14rem;
+        height: auto;
+        padding-top: 0px !important;
+        text-align: center;
+        img{
+            width: 14rem;
+        }
+        h3{
+            margin: 0px;
+            color: $c-main;
+            font-size: 1rem;
+        }
+        p{
+            color: $c-gray;
+            margin: 0px;
+            font-size: 1rem;
+        }
+        a{
+            img{
+                width: 1.7rem;
+            }
+        }
     }
 }
 

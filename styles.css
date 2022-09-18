@@ -238,18 +238,38 @@ h2 {
 }
 
 .teamcontainer {
-  width: 70%;
-  height: 16rem;
+  display: flex;
+  width: 73rem;
+  height: 24rem;
   background-color: #ddd9d3;
-  padding-bottom: 0%;
+  padding-top: 1% !important;
+  padding-bottom: 0% !important;
+  padding-inline: 0px !important;
   margin: auto;
 }
 .teamcontainer div {
-  margin-inline: 10px;
+  margin-inline: 1.5rem;
   display: inline;
-  border: 3px solid black;
-  width: 30%;
-  height: 100px;
+  width: 14rem;
+  height: auto;
+  padding-top: 0px !important;
+  text-align: center;
+}
+.teamcontainer div img {
+  width: 14rem;
+}
+.teamcontainer div h3 {
+  margin: 0px;
+  color: #431717;
+  font-size: 1rem;
+}
+.teamcontainer div p {
+  color: #4D525B;
+  margin: 0px;
+  font-size: 1rem;
+}
+.teamcontainer div a img {
+  width: 1.7rem;
 }
 
 #faqs {
