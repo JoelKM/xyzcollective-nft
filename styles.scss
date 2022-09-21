@@ -10,8 +10,6 @@
     src: url(sources/Fonts/Shikamaru.ttf);
 }
 
-
-
 // C O L O R   P A L E T T E
 
 
@@ -25,14 +23,17 @@ $c-main: #431717;
 
 // G E N E R A L
 
-
 body{
     margin: 0px;
     font-family: Kanit;
     font-size: 1.5rem;
-    overflow-x: hidden;
-    min-width: 100%;
+    width: 100vw;
     background-color: black;
+    overflow-x: hidden;
+}
+
+#main{
+    overflow-x: hidden;
 }
 
 
@@ -44,9 +45,8 @@ nav{
     background-color: $c-white;
     margin-top: auto;
     height: 90px;
-    width: 100%;
+    width: 100vw;
     font-size: 1.5rem;
-    position: absolute;
     opacity: 1;
     position: fixed;
     z-index: 9;
@@ -64,34 +64,64 @@ nav{
         ul{
             display: inline;
             li{
-                display: inline;
+                display: inline-block;
+                position: relative;
                 margin-right: 40px; 
                 text-decoration: none;
                 color: $c-main;
                 font-family: Shika;
             }
+            li:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: $c-main;
+                transform-origin: bottom right;
+                transition: transform 0.25s ease-out;
+            }
             li:hover{
                 cursor: pointer;
+            }              
+            li:hover:after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
             }
         }
         div{
             display: inline;
             margin-top: auto;
-            img{
-                margin-right: 20px;
+            a{
+                position: relative;
+                overflow: hidden;
+                img{
+                    margin-right: 20px;
+                }
             }
         }
     }
 }
 
-#twitter{
+.xyztype{
+    position: absolute;
+    z-index: 1000;
+    transition: 300ms;
+}
+.xyztype:hover{
+    opacity: 0;
+}
+
+.twitter{
     height: 27px;
 }
-#discord{
+.discord{
     height: 27px;
 }
-#magiceden{
-    height: 30px;
+.magiceden{
+    height: 27px;
 }
 
 
@@ -101,14 +131,14 @@ nav{
 
 #hero{
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     background-color: $c-darkred;
     h1{
-        font-size: 10rem;
+        font-size: 10vw;
         line-height: 0.9;
         text-align: center;
         position: absolute;
@@ -119,8 +149,8 @@ nav{
     img{
         opacity: 0.1;
         z-index: 1;
-        min-width:100%;
-        height: 100vh;
+        width:100vw;
+        height: 99vh;
         position: absolute;
     }   
 }
@@ -132,8 +162,6 @@ nav{
 
 #content{
     width: 100%;
-    display: flex;
-    flex-direction: column;
     margin: auto;
     div{
         padding-inline: 5%;
@@ -162,6 +190,18 @@ h2{
     font-family: Edu TAS Beginner;
     font-size: 3rem;
     margin-top: 10px;
+}
+footer{
+    visibility: hidden;
+    background-color: $c-gray;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    a{
+        display: inline;
+        margin-inline: 12.5vw;
+    }
 }
 
 //BUTTONS
@@ -202,8 +242,9 @@ h2{
     .banner{
         height: 12rem;
         background-color: $c-darkred;
+        overflow: hidden;
         h1{
-            font-size: 4.3rem;
+            font-size: 4vw;
             line-height: 0.9;
             text-align: center;
             position: absolute;
@@ -299,7 +340,7 @@ h2{
 }
 .teamcontainer{
     display: flex;
-    width: 73rem;
+    width: 60vw;
     height: 24rem;
     background-color: $c-white;
     padding-top: 1% !important;
@@ -308,9 +349,9 @@ h2{
     margin: auto;
     border-radius: 9px;
     div{
-        margin-inline: 1.5rem;
+        margin-inline: 1.5vw;
         display: inline;
-        width: 14rem;
+        width: rem;
         height: auto;
         padding-top: 0px !important;
         text-align: center;
@@ -396,8 +437,89 @@ h2{
   }
 
 
+
+  // R E S P O N S I V E
+
+// Pantallas grandes
+
+@media (max-width: 1400px) {
+    html {
+        font-size: 25px;
+    }
+    header{
+        visibility: hidden;
+    }
+    h1{
+        font-size: 7vw;
+    }
+    h2{
+        font-size: 5vw;
+    }
+    #join{
+        height: auto;
+    }
+    #info{
+        height: auto;
+        div{
+            width: 80vw;
+            height: auto;
+            margin-inline: 0px;
+            img{
+                display: block;
+                width: 80vw;
+            }
+            div{
+                display: block;
+                margin-inline: 0px;
+                width: 80vw;
+                float: left;
+            }
+            .buttons{
+                visibility: hidden;
+            }
+        }
+    }
+    footer{
+        visibility: visible;
+    }
+    #roadmap{
+        height: 45vh;
+    }
+    #team{
+        height: auto;
+    }
+    .teamcontainer{
+        width: 60vw;
+        flex-direction: column;
+        height: auto;
+    }
+    #faqs{
+        height: auto;
+    }
+  }
+  footer{
+    visibility: show;
+  }
+  
+  // Tabletas 
+  
+  @media (max-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+  }
+  
+  // Celulares 
+  
+  @media (max-width: 450px) {
+    html {
+        font-size: 12px;
+    }
+  }
+
 /*BUILDING TOOLS*/
 /*
 .test{
     border: 4px dashed rgb(6, 17, 124);
-}*/
+}
+*/
