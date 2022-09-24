@@ -1,3 +1,0 @@
-cd C:/www/github/xyzcollective-nft
-
-sass --watch styles.scss styles.css
