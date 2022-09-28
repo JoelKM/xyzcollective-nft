@@ -396,9 +396,9 @@ footer a {
   font-weight: lighter;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1100px) {
   html {
-    font-size: 25px;
+    font-size: 18px;
   }
   header {
     visibility: hidden;
@@ -423,6 +423,7 @@ footer a {
   #info div img {
     display: block;
     width: 80vw;
+    height: 80vw;
   }
   #info div div {
     display: block;
@@ -432,9 +433,6 @@ footer a {
   }
   #info div .buttons {
     visibility: hidden;
-  }
-  footer {
-    visibility: visible;
   }
   #roadmap {
     height: 45vh;
@@ -450,14 +448,8 @@ footer a {
   #faqs {
     height: auto;
   }
-}
-footer {
-  visibility: show;
-}
-
-@media (max-width: 768px) {
-  html {
-    font-size: 18px;
+  footer {
+    visibility: show;
   }
 }
 @media (max-width: 450px) {
