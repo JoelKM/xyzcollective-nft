@@ -363,7 +363,7 @@ footer{
 .teamcontainer{
     display: flex;
     width: 60vw;
-    height: 24rem;
+    height: 25rem;
     background-color: $c-white;
     padding-top: 1% !important;
     padding-bottom: 0% !important;
@@ -387,7 +387,7 @@ footer{
         }
         p{
             color: $c-gray;
-            margin: 0px;
+            margin-inline: 2vw;
             font-size: 1rem;
         }
         a{
