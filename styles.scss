@@ -231,7 +231,7 @@ footer{
 //JOIN SECTION
 
 #join{
-    height: 23rem;
+    height: 25rem;
     div{
         display: flex;
         align-items: center;
@@ -275,7 +275,7 @@ footer{
 //INFO SECTION
 
 #info{
-    height: 150rem;
+    height: 160rem;
     width: 100%;
     div{
         margin-inline: 7vw;
@@ -310,6 +310,11 @@ footer{
             margin-top: 40px;
             span{
                 color: rgb(247, 219, 158);
+            }
+        }
+        ul{
+            li{
+                width: 80vw;
             }
         }
     }
@@ -368,7 +373,6 @@ footer{
     div{
         margin-inline: 1.5vw;
         display: inline;
-        width: rem;
         height: auto;
         padding-top: 0px !important;
         text-align: center;
