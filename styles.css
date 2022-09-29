@@ -316,7 +316,7 @@ footer a {
 }
 
 #team {
-  height: 40rem;
+  height: auto;
 }
 
 .teamcontainer {
@@ -331,10 +331,10 @@ footer a {
   border-radius: 9px;
 }
 .teamcontainer div {
-  margin-inline: 1.5vw;
   display: inline;
   height: auto;
   padding-top: 0px !important;
+  padding-inline: 0px !important;
   text-align: center;
 }
 .teamcontainer div img {
@@ -414,6 +414,13 @@ footer a {
   font-weight: lighter;
 }
 
+@media (max-width: 1400px) {
+  .teamcontainer {
+    width: 60vw;
+    flex-direction: column;
+    height: auto;
+  }
+}
 @media (max-width: 1100px) {
   html {
     font-size: 18px;
@@ -454,14 +461,6 @@ footer a {
   }
   #roadmap {
     height: 45vh;
-  }
-  #team {
-    height: auto;
-  }
-  .teamcontainer {
-    width: 60vw;
-    flex-direction: column;
-    height: auto;
   }
   #faqs {
     height: auto;
