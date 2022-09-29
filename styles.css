@@ -249,7 +249,7 @@ footer a {
   width: 100%;
 }
 #info div {
-  margin-inline: 10%;
+  margin-inline: 7vw;
   margin-top: 6%;
   height: auto;
   width: 95rem;
@@ -257,22 +257,19 @@ footer a {
   padding-top: 0px;
   padding-bottom: 0px;
 }
-#info div img {
-  display: inline;
-  height: 27rem;
-  border: 0.5rem double #ddd9d3;
-}
 #info div div {
   display: inline;
   width: 50rem;
   margin-left: auto;
   height: auto;
-  float: right;
   margin-top: auto;
 }
 #info div div p {
   color: #ddd9d3;
   text-align: justify;
+}
+#info div p {
+  width: 80vw;
 }
 #info div .buttons a {
   background-color: #6b6b6b;
@@ -283,6 +280,25 @@ footer a {
 }
 #info div h3 span {
   color: rgb(247, 219, 158);
+}
+
+.collective img {
+  display: inline;
+  height: 27rem;
+  border: 0.5rem double #ddd9d3;
+  float: left;
+  margin-right: 20px;
+}
+.collective div {
+  display: inline;
+  width: 50rem;
+  margin-left: auto;
+  height: auto;
+  margin-top: auto;
+}
+.collective div p {
+  color: #ddd9d3;
+  text-align: justify;
 }
 
 .staking {

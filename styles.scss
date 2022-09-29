@@ -278,30 +278,27 @@ footer{
     height: 150rem;
     width: 100%;
     div{
-        margin-inline: 10%;
+        margin-inline: 7vw;
         margin-top: 6%;
         height: auto;
         width: 95rem;
         padding-inline: 0px;
         padding-top: 0px;
         padding-bottom: 0px;
-        img{
-            display: inline;
-            height: 27rem;
-            border: 0.5rem double $c-white;
-        }
         div{
             display: inline;
             width: 50rem;
             margin-left: auto;
             height: auto;
-            float: right;
             margin-top: auto;
             p{
                     color: $c-white;
                     text-align: justify;
             }
             
+        }
+        p{
+            width: 80vw;
         }
         .buttons{
             a{
@@ -314,6 +311,26 @@ footer{
             span{
                 color: rgb(247, 219, 158);
             }
+        }
+    }
+}
+.collective{
+    img{
+        display: inline;
+        height: 27rem;
+        border: 0.5rem double $c-white;
+        float: left;
+        margin-right: 20px;
+    }
+    div{
+        display: inline;
+        width: 50rem;
+        margin-left: auto;
+        height: auto;
+        margin-top: auto;
+        p{
+                color: $c-white;
+                text-align: justify;
         }
     }
 }
