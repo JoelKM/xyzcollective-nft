@@ -1,5 +1,7 @@
 body{
-
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 main{
     display: flex;
@@ -15,4 +17,21 @@ nav>ul>li{
 }
 .navigation, .socials{
     text-align: right;
+}
+
+.team>div{
+    display: flex;
+    justify-content: space-evenly;
+}
+.team>div>div{
+    width: 30%;
+    text-align: center;
+}
+.team>div>div>img{
+    border: 0px solid black;
+    border-radius: 999px;
+    width: 27%;
+}
+.team>div>div>a>img{
+    height: 30px;
 }
