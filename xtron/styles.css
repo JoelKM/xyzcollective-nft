@@ -1,0 +1,18 @@
+body{
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+nav>ul>li{
+    display: inline;
+    margin-right: 10px;
+}
+.navigation, .socials, .home{
+    display: inline;
+}
+.navigation, .socials{
+    text-align: right;
+}
